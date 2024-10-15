@@ -1,0 +1,67 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import 'react-big-calendar/lib/css/react-big-calendar.css';
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(45deg, #1a202c, #2d3748);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.holographic {
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.holographic-text {
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: holo 5s ease infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes holo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.rbc-calendar {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.rbc-header {
+  background-color: rgba(243, 244, 246, 0.1);
+  padding: 0.5rem;
+}
+
+.rbc-event {
+  background-color: rgba(59, 130, 246, 0.6);
+}
+
+.rbc-today {
+  background-color: rgba(239, 246, 255, 0.2);
+}
